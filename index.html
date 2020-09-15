@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page-body">
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
-    <header>
-      <nav> 
-        <ul>
+    <header class="main-header">
+      <nav class="main-navigation"> 
+        <ul class="site-navigation">
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li>
-            <a>
+            <a class="main-header-logo">
               <img src="https://via.placeholder.com/138x70" alt="Логотип сайта Седона">
             </a>
           </li>
@@ -23,27 +25,27 @@
     </header>
 
 
-    <main>
+    <main class="container">
       
-      <section>
+      <section class="welcome-sedona">
         <img src="https://via.placeholder.com/there's_no_width_in_figma)" alt="Welcome to the gorgeous">
         <h1>Sedona</h1>
         <img src="https://via.placeholder.com/there's_no_width_in_figma)" alt="Because the Grand Canyon sucks!">
       </section>
 
-      <section>
+      <section class="advantages">
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
 
-        <div>
+        <div class="advantages-real-city">
           <h3>Настоящий городок</h3>
           <p>№1</p>
           <p>Седона - не аттракцион для туристов, там
             течёт своя жизнь</p>
           <img src="https://via.placeholder.com/800x256" alt="living-city">
         </div>
-        <div> 
-          <ul>
+        <div class="advantages-cool-stuff"> 
+          <ul class="advantages-cool-stuff-list">
             <li>
               <h4>Жильё</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -58,25 +60,25 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="advantages-devils-bridge">
           <img src="https://via.placeholder.com/800x256" alt="devil's-bridge">
           <h3>Там есть мост дьявола</h3>
           <p>№2</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <div>
-          <ul>
-            <li>
+        <div class="advantages3-5">
+          <ul class="advantages3-5-list">
+            <li class="advantages3-5-list-item advantages-small-square">
               <h3>Небольшая площадь</h3>
               <p>№3</p>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
-            <li>
+            <li class="advantages3-5-list-item advantages-beautiful-road">
               <h3>Красивая дорога</h3>
               <p>№4</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li>
+            <li class="advantages3-5-list-item advantages-few-tourists">
               <h3>Мало туристов</h3>
               <p>№5</p>
               <p>Большинство едет в Гранд Каньон и толпятся там</p>
@@ -85,40 +87,41 @@
         </div> 
       </section>
 
-      <section>
+      <section class="interested">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button>Поиск гостиницы в Седоне</button>
+        <button class="button interested-button-search">Поиск гостиницы в Седоне</button>
       </section>
 
-      <section>
+      <section class="hotel-search-form">
         <!-- Тут должна быть область с формами, в тз написано её пока что не делать :) -->
         <img src="https://via.placeholder.com/1199x474" alt="map">
       </section>
     </main>
     
 
-    <footer>
-      <section>
+    <footer class="main-footer page-footer">
+      <section class="footer-contacts">
         <p>#VISITSEDONA<br>
-          тел:<a href="tel:+74956660166">+7(495)666-01-66</a>
+          тел:<a class="footer-phone" href="tel:+74956660166">+7(495)666-01-66</a>
         </p>
       </section>
-      <section>
-        <ul>
+      <section class="footer-social">
+        <ul class="socials-list">
           <li>
-            <a href="#">Twitter</a>
+            <a class="social-button" href="#">Twitter</a>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <a class="social-button" href="">Facebook</a>
           </li>
           <li>
-            <a href="#">Youtube</a>
+            <a class="social-button" href="#">Youtube</a>
           </li>
         </ul>
       </section>
-      <section>
-        <p>Website by<a><img src="https://via.placeholder.com/30x39" alt="academy's_logo"></a>html academy</p>
+      <section class="footer-copyright">
+        <!-- Убрал из азбзаца хтмл академи, т.к. это не текст :) -->
+        <p>Website by<a class="footer-copyright-logo"><img src="https://via.placeholder.com/30x39" alt="academy's_logo"></a></p>
       </section>
     </footer>
   </body>
