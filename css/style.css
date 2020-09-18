@@ -103,23 +103,23 @@ img {
     line-height: 26px;
 }
 
-.advantages h2 {
+.advantages-title {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
 }
 
-.advantages h3,
-.advantages h4 {
+.advantages-reasons,
+.advantages-stuff-title {
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
 }
 
-.advantages-real-city,
-.advantages-devils-bridge {
+.advantage1,
+.advantage2 {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -128,11 +128,11 @@ img {
     color: var(--basic-white);
 }
 
-.advantages-cool-stuff {
+.advantages-stuff {
     background-color: var(--basic-white);
 }
 
-.advantages-cool-stuff-list {
+.advantages-stuff-list {
     list-style: none;
     font-style: normal;
     font-weight: normal;
@@ -160,7 +160,7 @@ img {
     background-color: inherit;
 }
 
-.interested h2 {
+.interested-title {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -213,17 +213,17 @@ img {
     background-color: var(--social-button-active);
 }
 
-.footer-copyright {
+.copyright {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
 }
 
-.footer-copyright-logo:hover {
+.copyright-logo:hover {
     background-color: var(--basic-blue);
 }
 
-.footer-copyright-logo:active {
+.copyright-logo:active {
     background-color: var(--copyright-logo-active);
 }
