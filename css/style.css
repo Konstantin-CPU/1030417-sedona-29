@@ -39,6 +39,7 @@
     --button-brown-color: #766357;
     --button-brown-hover: #604E43;
     --button-brown-active: #503E33;
+    --button-active-color: rgba(255, 255, 255, 0.3);
 
     --social-button-hover: #669EC0;
     --social-button-active: #5496BD;
@@ -96,68 +97,39 @@ img {
     background-color: transparent;
 }
 
-.advantages {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-}
-
-.advantages-title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-}
-
-.advantages-reasons,
-.advantages-stuff-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 21px;
-}
-
-.advantage1,
-.advantage2 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    background-color: var(--basic-blue);
-    color: var(--basic-white);
-}
-
-.advantages-stuff {
-    background-color: var(--basic-white);
-}
-
-.advantages-stuff-list {
-    list-style: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-.advantages3-5 {
-    background-color: var(--basic-grey);
-}
-
-.advantages3-5-list {
-    list-style: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-}
-
+.advantages,
 .interested {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    background-color: inherit;
+}
+
+.advantages-title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 26px;
+    font-size: 21px;
+}
+
+.block-title {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.advantage1,
+.advantage2 {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+}
+
+.advantages-stuff-list,
+.advantages3-5-list {
+    list-style: none;
+}
+
+.advantages-reasons {
+    line-height: 21px;
 }
 
 .interested-title {
@@ -181,6 +153,7 @@ img {
 
 .interested-button-search:active {
     background-color: var(--button-brown-active);
+    color: var(--button-active-color);
 }
 
 /* Footer */
