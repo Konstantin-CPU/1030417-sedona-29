@@ -40,9 +40,10 @@
     --button-brown-hover: #604E43;
     --button-brown-active: #503E33;
     --button-active-color: rgba(255, 255, 255, 0.3);
+    --button-grey-color: #cacaca;
 
-    --social-button-hover: #669EC0;
-    --social-button-active: #5496BD;
+    --deeper-blue: #669EC0;
+    --deep-blue: #5496BD;
 
     --copyright-logo-active: #BDBBBC;
 }
@@ -52,8 +53,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: "PT Sans", sans-serif;
-    font-size: 21px;
-    line-height: 26px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
     color: var(--main-black);
     text-transform: uppercase;
     background-color: var(--basic-color);
@@ -179,11 +182,11 @@ img {
 }
 
 .social-button:hover {
-    background-color: var(--social-button-hover);
+    background-color: var(--deeper-blue);
 }
 
 .social-button:active {
-    background-color: var(--social-button-active);
+    background-color: var(--deep-blue);
 }
 
 .copyright {
@@ -199,4 +202,102 @@ img {
 
 .copyright-logo:active {
     background-color: var(--copyright-logo-active);
+}
+
+
+
+
+/* Страница отелей */
+
+
+
+.main-catalog {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.results,
+.hotel-name {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.list {
+    list-style: none;
+}
+
+.sort-button {
+    color: var(--main-color);
+}
+
+.sort-button:hover {
+    color: var(--basic-blue);
+}
+
+.sort-button:active {
+    color: var(--main-color);
+}
+
+.active {
+    color: var(--basic-blue);
+}
+
+.item-change-button {
+    background-color: var(--button-grey-color);
+}
+
+.item-change-button:hover {
+    background-color: var(--main-color);
+}
+
+.item-change-button:active {
+    background-color: var(--basic-blue);
+}
+
+.active-button {
+    background-color: var(--basic-blue);
+}
+
+.hotel-name:hover {
+    color: var(--basic-blue);
+}
+
+.hotel-name:active {
+    color: var(--main-color);
+}
+
+.more-info {
+    background-color: var(--basic-blue);
+    font-weight: bold;
+}
+
+.more-info:hover {
+    background-color: var(--deeper-blue);
+}
+
+.more-info:active {
+    background-color: var(--deep-blue);
+}
+
+.reservation {
+    background-color: var(--button-brown-color);
+}
+
+.reservation:hover {
+    background-color: var(--button-brown-hover);
+}
+
+.reservation:active {
+    background-color: var(--button-brown-active);
+}
+
+.button:active {
+    color: var(--button-active-color);   
+}
+
+.rating {
+    background-color: var(--forms-background);
 }
