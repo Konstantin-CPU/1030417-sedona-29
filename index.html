@@ -9,18 +9,30 @@
   <body class="page-body">
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
     <header class="main-header">
-      <nav class="main-navigation"> 
-        <ul class="site-navigation">
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li>
-            <a class="main-header-logo">
-              <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
-            </a>
-          </li>
-          <li><a href="">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+      <nav class="main-navigation">
+        <div class="main-header-bar">
+          <div class="main-navigation-wrapper">
+            <ul class="main-navigation-list list">
+              <li>
+                <ul class="nav-sublist1 list">
+                  <li><a href="">Информация</a></li>
+                  <li><a href="">Фото и видео</a></li>
+                </ul>
+              </li>
+              <li class="main-nav-item-logo">
+                <a class="main-header-logo">
+                  <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
+                </a>
+              </li>
+              <li>
+                <ul class="nav-sublist2 list">
+                  <li><a href="">Карта штата</a></li>
+                  <li ><a href="hotels.html">Гостиницы</a></li> 
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -28,10 +40,10 @@
     <main class="container">
       
       <section class="welcome-sedona">
-        <img src="img/welcome.svg" width="188" height="88" alt="Welcome">
-        <img src="img/to the gorgeous.svg" width="256" height="29" alt="To the gorgeous">
-        <h1>Sedona</h1>
-        <img src="img/SEDONA.svg" width="457" height="213" alt="SEDONA">
+        <img class="w-s-image-1" src="img/welcome.svg" width="188" height="88" alt="Welcome">
+        <img class="w-s-image-2"  src="img/to the gorgeous.svg" width="256" height="29" alt="To the gorgeous">
+        <h1 class="w-s-heading">Sedona</h1>
+        <img class="w-s-image-3"  src="img/SEDONA.svg" width="457" height="213" alt="SEDONA">
       </section>
 
       <section class="advantages">
@@ -40,25 +52,27 @@
           <h2 class="block-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         </div>
         <div class="advantage1">
-          <h3 class="advantages-reasons advantages-title">Настоящий городок</h3>
-          <p>-№1-</p>
-          <p>Седона - не аттракцион для туристов, там
-            течёт своя жизнь</p>
+          <div class="adv1-container">
+            <h3 class="advantages-reasons advantages-title">Настоящий городок</h3>
+            <p>-№1-</p>
+            <p>Седона - не аттракцион для туристов, там
+              течёт своя жизнь</p>
+          </div>
           <img src="img/living-city-block-picture.jpg" width="800" height="256" alt="living-city">
         </div>
         <div class="advantages-stuff"> 
-          <ul class="advantages-stuff-list">
-            <li>
+          <ul class="advantages-stuff-list list">
+            <li class="advantages-stuff-list-item">
               <img src="img/house-icon.svg" width="75" height="72" alt="house">
               <h4 class="advantages-reasons advantages-title">Жильё</h4>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li>
+            <li class="advantages-stuff-list-item">
               <img src="img/food-icon.svg" width="75" height="70" alt="food">
               <h4 class="advantages-reasons advantages-title">Еда</h4>
               <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
             </li>
-            <li>
+            <li class="advantages-stuff-list-item">
               <img src="img/souvenir-icon.svg" width="64" height="77" alt="souvenir">
               <h4 class="advantages-reasons advantages-title">Сувениры</h4>
               <p>Не только китайского, но и местного производства!</p>
@@ -67,23 +81,25 @@
         </div>
         <div class="advantage2">
           <img src="img/devils-bridge-block-picture.jpg" width="800" height="256" alt="devil's-bridge">
-          <h3 class="advantages-reasons advantages-title">Там есть мост дьявола</h3>
-          <p>-№2-</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="adv2-container">  
+            <h3 class="advantages-reasons advantages-title">Там есть мост дьявола</h3>
+            <p>-№2-</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </div>
         <div class="advantages3-5">
-          <ul class="advantages3-5-list">
-            <li>
+          <ul class="advantages3-5-list list">
+            <li class="adv-3-5-list-item">
               <h3 class="advantages-reasons advantages-title">Небольшая площадь</h3>
               <p>-№3-</p>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
-            <li>
+            <li class="adv-3-5-list-item">
               <h3 class="advantages-reasons advantages-title">Красивая дорога</h3>
               <p>-№4-</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li>
+            <li class="adv-3-5-list-item">
               <h3 class="advantages-reasons advantages-title">Мало туристов</h3>
               <p>-№5-</p>
               <p>Большинство едет в Гранд Каньон и толпятся там</p>
@@ -113,7 +129,7 @@
           </p>
         </div>
         <div class="footer-social">
-          <ul class="socials-list">
+          <ul class="socials-list list">
             <li>
               <a class="social-button" href="#">Twitter</a>
             </li>
@@ -126,7 +142,6 @@
           </ul>
         </div>
         <div class="copyright">
-        <!-- Убрал из азбзаца хтмл академи, т.к. это не текст :) -->
         <p>Website by<a class="copyright-logo"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="academys_logo"></a></p>
         </div>
       </div>
