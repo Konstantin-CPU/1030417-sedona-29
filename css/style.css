@@ -50,6 +50,7 @@
 
 .page {
     background-color: var(--forms-background);
+    height: 100%;
 }
 
 .page-body {
@@ -64,6 +65,7 @@
     color: var(--main-black);
     text-transform: uppercase;
     background-color: var(--basic-white);
+    min-height: 100%;
 }
 
 a {
@@ -243,7 +245,7 @@ img {
     background-color: inherit;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 30px;
+    padding-left: 30px;  
 }
 
 .contacts {
@@ -293,7 +295,34 @@ img {
 
 /* Страница отелей */
 
+.hidden-headings {
+    display: none;
+}
 
+.sort-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto) 500px auto;
+}
+
+.results {
+    grid-column: 1/2;
+}
+
+.sort {
+    grid-column: 2/3;
+}
+
+.sort-list {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item-change {
+    grid-column: -2/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .main-catalog {
     font-style: normal;
@@ -307,6 +336,50 @@ img {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+}
+
+.hotels-list {
+    grid-template-rows: repeat(3, 150px);
+}
+
+.hotel1 {
+    grid-row: 1/2;
+}
+
+.hotel2 {
+    grid-row: 2/3;
+}
+
+.hotel3 {
+    grid-row: 3/4;
+}
+
+.hotel {
+    display: grid;
+    grid-template-columns: auto auto 500px auto;
+}
+
+.hotel + img {
+    grid-column: 1/2;
+}
+
+.hotel .hotels-main-info-containter {
+    grid-column: 2/3;
+}
+
+.hotel .rating-container {
+    grid-column: -2/-1;
+}
+
+.star-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.star-list li {
+    width: 18px;
+    height: 17px;
+    background: url("img/star.svg") no-repeat 50% 50%;
 }
 
 .list {

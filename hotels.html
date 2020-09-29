@@ -25,18 +25,18 @@
   </header>
 
     <main>
-        <h1>Гостиницы</h1>
+        <h1 class="hidden-headings">Гостиницы</h1>
         <section>
-            <h2>Фильтры</h2>
+            <h2 class="hidden-headings">Фильтры</h2>
             <!-- Форма с фильтрами -->
         </section>
 
         <section class="main-catalog">
-            <h2>Найденные гостиницы</h2>
-            <!-- Спан добавил для возможности и удобства изменения в будущем при работающих фильтрах -->
-            <p class="results">Найдено:<span>3</span></p>
-            <p class="sort">Сортировка:</p>
-            <ul class="list sort-list">
+            <h2 class="hidden-headings">Найденные гостиницы</h2>
+            <div class="sort-container">
+              <p class="results">Найдено:<span>3</span></p>
+              <p class="sort">Сортировка:</p>
+              <ul class="list sort-list">
                 <li>
                     <button  class="sort-button active" disabled>По цене</button>
                 </li>
@@ -46,30 +46,34 @@
                 <li>
                     <button class="sort-button">По рейтингу</button>
                 </li>
-            </ul>
-            <ul class="list item-change">
+              </ul>
+              <ul class="list item-change">
                 <li>
                     <button class="item-change-button item-change-button-previous" disabled><img src="https://via.placeholder.com/11x10"></button>
                 </li>
                 <li>
                     <button class="item-change-button item-change-button-next active-button"><img src="https://via.placeholder.com/11x10"></button>
                 </li>
-            </ul>
+              </ul>
+            </div>
                 
             <ul class="list hotels-list">
-                <li class="hotel">
+                <li class="hotel hotel1">
                     <img src="img/Amara-resort-picture.jpg" width="135" height="90" alt="hotel's_picture">
+                  <div class="hotels-main-info-containter">
                     <a class="hotel-name" href="">
-                        <h3>Amara Resort & Spa</h3>
+                      <h3>Amara Resort & Spa</h3>
                     </a>
                     <p>Гостиница от 4000 Р.</p>
                     <a href="" class="button more-info">Подробнее</a>
                     <a href="" class="button reservation">Забронировать</a>
+                  </div>
                     <!-- Список для звезд -->
-                    <ul class="list">
+                  <div class="rating-container">
+                    <ul class="star-list list">
                         <li>
                         </li>
-                        <li>  
+                        <li>
                         </li>
                         <li>  
                         </li>
@@ -77,17 +81,21 @@
                         </li>
                     </ul>
                     <p class="rating">Рейтинг: 8,5</p>
+                  </div>
                 </li>
-                <li class="hotel">
+                <li class="hotel hotel2">
                     <img src="img/desert-quail-inn-picture.jpg" width="135" height="90"  alt="hotel's_picture">
+                  <div class="hotels-main-info-containter">
                     <a class="hotel-name" href="">
                         <h3>Desert Quail Inn</h3>
                     </a>
                     <p>Гостиница от 3000 Р.</p>
                     <a href="" class="button more-info">Подробнее</a>
                     <a href="" class="button reservation">Забронировать</a>
+                  </div>
                     <!-- Список для звезд -->
-                    <ul class="list">
+                    <div class="rating-container">
+                    <ul class="star-list list">
                         <li>
                         </li>
                         <li>  
@@ -96,23 +104,28 @@
                         </li>
                     </ul>
                     <p class="rating">Рейтинг: 8,9</p>
+                  </div>
                 </li>
-                <li class="hotel">
+                <li class="hotel hotel3">
                     <img src="img/villas-at-poco-diablo-picture.jpg" width="135" height="90"  alt="hotel's_picture">
+                  <div class="hotels-main-info-containter">
                     <a class="hotel-name" href="">
                         <h3>Villas at Poco Diablo</h3>
                     </a>
                     <p>Гостиница от 2000 Р.</p>
                     <a href="" class="button more-info">Подробнее</a>
                     <a href="" class="button reservation">Забронировать</a>
+                  </div>
                     <!-- Список для звезд -->
-                    <ul class="list">
+                    <div class="rating-container">
+                    <ul class="star-list list">
                         <li>  
                         </li>
                         <li> 
                         </li>
                     </ul>
                     <p class="rating">Рейтинг: 9,2</p>
+                  </div>
                 </li>
             </ul>
         </section>
@@ -126,7 +139,7 @@
           </p>
         </div>
         <div class="footer-social">
-          <ul class="socials-list">
+          <ul class="socials-list list">
             <li>
               <a class="social-button" href="#">Twitter</a>
             </li>
