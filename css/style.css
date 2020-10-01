@@ -235,6 +235,7 @@ img {
 
 .main-footer {
     background-color: var(--footer-background);
+    align-items: center;
 }
 
 .footer-contacts {
@@ -302,6 +303,8 @@ img {
 .sort-container {
     display: grid;
     grid-template-columns: repeat(3, auto) 500px auto;
+    padding-right: 73px;
+    padding-left: 73p
 }
 
 .results {
@@ -338,6 +341,10 @@ img {
     line-height: 26px;
 }
 
+.hotel-name > h3 {
+    margin: 0;
+}
+
 .hotels-list {
     grid-template-rows: repeat(3, 150px);
 }
@@ -356,7 +363,12 @@ img {
 
 .hotel {
     display: grid;
-    grid-template-columns: auto auto 500px auto;
+    grid-template-columns: auto auto 1fr min-content;
+    padding: 30px 0;
+}
+
+.hotel div {
+    outline: lawngreen 1px solid;
 }
 
 .hotel + img {
@@ -365,21 +377,61 @@ img {
 
 .hotel .hotels-main-info-containter {
     grid-column: 2/3;
+    margin-left: 29px;
+    display: grid;
+    grid-template-columns: 110px 142px;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 6px;
+}
+
+.hotel-name {
+    grid-column: auto;
+    grid-column: 1/-1;
+}
+
+.hotel-type {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.hotel-price {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.more-info {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.reservation {
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
 .hotel .rating-container {
     grid-column: -2/-1;
+    grid-template-rows: min-content min-content;
 }
 
 .star-list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, min-content);
+    padding: 0;
 }
 
 .star-list li {
     width: 18px;
     height: 17px;
-    background: url("img/star.svg") no-repeat 50% 50%;
+    background: url("/img/star.svg") no-repeat 50% 50%;
+    margin-left: 6px;
+}
+
+.rating {
+    grid-row: -2/-1;
+    width: 110px;
+    text-align: center;
+    margin-left: auto;
 }
 
 .list {
