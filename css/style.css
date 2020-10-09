@@ -48,18 +48,8 @@
     --copyright-logo-active: #BDBBBC;
 }
 
-<<<<<<< HEAD
-.page {
-    background-color: var(--forms-background);
-    height: 100%;
-}
-
-.page-body {
-    width: 1200px;
-=======
 body {
     min-width: 1200px;
->>>>>>> Опыты
     margin: 0 auto;
     padding: 0;
     font-family: "PT Sans", sans-serif;
@@ -69,13 +59,8 @@ body {
     line-height: 21px;
     color: var(--main-black);
     text-transform: uppercase;
-<<<<<<< HEAD
-    background-color: var(--basic-white);
-    min-height: 100%;
-=======
     background-color: var(--basic-color);
     width: 1200px;
->>>>>>> Опыты
 }
 
 a {
@@ -111,15 +96,9 @@ img {
 
 .site-navigation {
     list-style: none;
-<<<<<<< HEAD
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 0 auto;
-=======
     display: flex;
     justify-content: space-around;
     margin-top: 0;
->>>>>>> Опыты
 }
 
 /* Main's blocks */
@@ -148,55 +127,6 @@ img {
     display: none;
 }
 
-.advantages {
-    padding-left: 0;
-    display: grid;
-    grid-template-rows: 256px 330px 256px 256px;
-}
-
-.advantage1 {
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.advantage1 div {
-    grid-column: 1/2;
-    text-align: center;
-}
-
-.advantages-stuff-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.advantages-stuff-list li {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.advantage2 {
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.advantage2 div {
-    grid-column: 2/3;
-    text-align: center;
-}
-
-.advantages-3-5 {
-    background-color: var(--basic-grey);
-    grid-row: -2/-1;
-    text-align: center;
-}
-
-.advantages-3-5-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 .advantages,
 .interested {
     font-style: normal;
@@ -215,10 +145,7 @@ img {
     font-weight: bold;
     line-height: 26px;
     font-size: 21px;
-<<<<<<< HEAD
-=======
     margin: auto;
->>>>>>> Опыты
     text-align: center;
 }
 
@@ -262,7 +189,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* ТУТА */
     justify-content: space-between;
 }
 
@@ -313,11 +239,8 @@ img {
     font-size: 21px;
     line-height: 26px;
     border: none;
-<<<<<<< HEAD
-=======
     width: 100%;
     height: 86px;
->>>>>>> Опыты
 }
 
 .interested-button-search:hover {
@@ -342,32 +265,14 @@ img {
     font-size: 21px;
     line-height: 26px;
     background-color: inherit;
-<<<<<<< HEAD
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 30px;  
-}
-
-.contacts {
-    grid-column: 1/2;
-=======
     display: flex;
     justify-content: space-around;
->>>>>>> Опыты
     text-align: center;
 }
 
 .socials-list {
-<<<<<<< HEAD
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 6px;
-    padding: 0;
-=======
     list-style: none;
     display: flex;
->>>>>>> Опыты
 }
 
 .social-button {
