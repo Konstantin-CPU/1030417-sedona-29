@@ -340,15 +340,15 @@ button:focus {
 }
 
 .social-button-tw {
-    background: var(--basic-blue) url("/img/twitter.svg") 50% no-repeat;
+    background: var(--basic-blue) url("../img/twitter.svg") 50% no-repeat;
 }
 
 .social-button-fb {
-    background: var(--basic-blue) url("/img/fb-icon.svg") 50% no-repeat;
+    background: var(--basic-blue) url("../img/fb-icon.svg") 50% no-repeat;
 }
 
 .social-button-yt {
-    background: var(--basic-blue) url("/img/youtube-icon.svg") 50% no-repeat;
+    background: var(--basic-blue) url("../img/youtube-icon.svg") 50% no-repeat;
 }
 
 .social-button:hover {
@@ -360,15 +360,15 @@ button:focus {
 }
 
 .social-button-tw:active {
-    background-image: url("/img/twitter-active.svg");
+    background-image: url("../img/twitter-active.svg");
 }
 
 .social-button-fb:active {
-    background-image: url("/img/fb-active.svg");
+    background-image: url("../img/fb-active.svg");
 }
 
 .social-button-yt:active {
-    background-image: url("/img/youtube-active.svg");
+    background-image: url("../img/youtube-active.svg");
 }
 
 .copyright {
@@ -381,17 +381,17 @@ button:focus {
 
 .copyright-logo {
     display: inline-block;
-    background: url("/img/logo-htmlacademy.svg") 50% no-repeat;
+    background: url("../img/logo-htmlacademy.svg") 50% no-repeat;
     width: 115px;
     height: 41px;
 }
 
 .copyright-logo:hover {
-    background: url("/img/logo-htmlacademy-hover.svg") 50% no-repeat;    
+    background: url("../img/logo-htmlacademy-hover.svg") 50% no-repeat;    
 }
 
 .copyright-logo:active {
-    background: url("/img/logo-htmlacademy-active.svg") 50% no-repeat;  
+    background: url("../img/logo-htmlacademy-active.svg") 50% no-repeat;  
 }
 
 
@@ -476,31 +476,31 @@ button:focus {
 }
 
 .item-change-button-previous {
-    background: url("/img/icon-up-dir-normal.svg") 50% no-repeat;
+    background: url("../img/icon-up-dir-normal.svg") 50% no-repeat;
 }
 
 .item-change-button-next {
     margin-left: 12px;
-    background: url("/img/icon-down-dir-normal.svg") 50% no-repeat;
+    background: url("../img/icon-down-dir-normal.svg") 50% no-repeat;
 }
 
 .item-change-button-previous:hover {
-    background: url("/img/icon-up-dir-hover.svg") 50% no-repeat;
+    background: url("../img/icon-up-dir-hover.svg") 50% no-repeat;
 }
 
 .item-change-button-next:hover {
-    background: url("/img/icon-down-dir-hover.svg") 50% no-repeat;
+    background: url("../img/icon-down-dir-hover.svg") 50% no-repeat;
 }
 
 .item-change-button-previous.active-button,
 .item-change-button-previous:active {
-    background: url("/img/icon-up-dir-active.svg") 50% no-repeat;
+    background: url("../img/icon-up-dir-active.svg") 50% no-repeat;
     border: none;
 }
 
 .item-change-button-next.active-button,
 .item-change-button-next:active {
-    background: url("/img/icon-down-dir-active.svg") 50% no-repeat;
+    background: url("../img/icon-down-dir-active.svg") 50% no-repeat;
     border: none;
 }
 
@@ -567,7 +567,7 @@ button:focus {
 .star-list li {
     width: 18px;
     height: 17px;
-    background: url("/img/star.svg") no-repeat 50% 50%;
+    background: url("../img/star.svg") no-repeat 50% 50%;
     margin-left: 6px;
 }
 
