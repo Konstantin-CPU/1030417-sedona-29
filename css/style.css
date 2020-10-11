@@ -116,6 +116,13 @@ button:focus {
     padding: 0;
 }
 
+.main-header-logo {
+    display: inline-block;
+    width: 138px;
+    height: 70px;
+    background: url("../img/logo.svg") 50% no-repeat;
+}
+
 /* Main's blocks */
 
 .container {
@@ -135,7 +142,7 @@ button:focus {
 
 .welcome-sedona img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .heading {
@@ -171,14 +178,16 @@ button:focus {
 }
 
 .block-title {
-    font-weight: normal;
-    font-size: 14px;
-    order: 1;
-    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: auto;
 }
 
 .advantages-block-title p {
-    margin-top: auto;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: auto;
 }
 
 .advantage1,
@@ -225,21 +234,21 @@ button:focus {
     content: "";
     width: 75px;
     height: 72px;
-    background: url("/img/house-icon.svg") 50% no-repeat;
+    background: url("../img/house-icon.svg") 50% no-repeat;
 }
 
 .advantages-stuff-list li:nth-child(2)::before{
     content: "";
     width: 75px;
     height: 70px;
-    background: url("/img/food-icon.svg") 50% no-repeat;
+    background: url("../img/food-icon.svg") 50% no-repeat;
 }
 
 .advantages-stuff-list li:last-child::before{
     content: "";
     width: 64px;
     height: 77px;
-    background: url("/img/souvenir-icon.svg") 50% no-repeat;
+    background: url("../img/souvenir-icon.svg") 50% no-repeat;
 }
 
 .advantages3-5 {
