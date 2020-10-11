@@ -97,6 +97,7 @@ button:focus {
 .main-header {
     min-height: 56px;
     text-align: center;
+    margin-bottom: -20px;
 }
 
 .main-navigation {
@@ -116,11 +117,8 @@ button:focus {
     padding: 0;
 }
 
-.main-header-logo {
-    display: inline-block;
-    width: 138px;
-    height: 70px;
-    background: url("../img/logo.svg") 50% no-repeat;
+.site-navigation li:not(:nth-child(3)) {
+    padding-top: 15px;
 }
 
 /* Main's blocks */
@@ -134,16 +132,26 @@ button:focus {
     display: flex;
     flex-direction: column;
     height: 509px;
-}
-
-.welcome-sedona img {
-    margin: auto;
+    background: url("../img/background-photo-main-page.jpg") 50% no-repeat;
 }
 
 .welcome-sedona img {
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
 }
+
+.welcome-sedona img:first-child {
+    margin-top: auto;
+    margin-bottom: 11px;
+} 
+
+.welcome-sedona img:nth-child(2) {
+    margin-bottom: auto;
+} 
+
+.welcome-sedona img:last-child {
+    margin: auto;
+} 
 
 .heading {
     display: none;
