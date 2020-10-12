@@ -333,17 +333,26 @@ button:focus {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
 }
 
 .socials-list {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
+.socials-list li,
 .social-button {
     width: 46px;
     height: 48px;
+}
+
+.socials-list li:not(:last-child) {
     margin-right: 6px;
+}
+
+.social-button {
     display: inline-block;
 }
 
@@ -455,7 +464,6 @@ button:focus {
 
 .item-change {
     display: flex;
-    width: 34px;
 }
 
 .sort-button:not(.active) {
@@ -552,6 +560,7 @@ button:focus {
 .info {
     display: flex;
     text-align: left;
+    margin-bottom: -5px;
 }
 
 .info p{
@@ -559,6 +568,15 @@ button:focus {
     width: 120px;
 }
 
+.hotel-buttons {
+    display: flex;
+}
+
+.hotel-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .rating-container {
     display: flex;
@@ -582,6 +600,7 @@ button:focus {
 .rating {
     width: 110px;
     text-align: center;
+    margin: 0;
 }
 
 .hotel-name:hover {
@@ -599,6 +618,7 @@ button:focus {
     height: 27px;
     background-color: var(--basic-blue);
     font-weight: bold;
+    margin-right: 6px;
 }
 
 .more-info:hover {
