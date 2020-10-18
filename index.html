@@ -13,7 +13,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="site-navigation list">
-        <li><a href="">Информация</a></li>
+        <li><a href="" class="active">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
         <li>
           <a href="#" class="main-header-logo">
@@ -99,12 +99,20 @@
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="button interested-button-search">Поиск гостиницы в Седоне</button>
     </section>
-    <section class="hotel-search-form">
-      <!-- Тут должна быть область с формами, в тз написано её пока что не делать :) -->
+    <section class="hotel-search-block">
+      <form class="hotel-search-form">
+        <label>дата заезда:<input class="form-date form-arrival-date" type="text" value="24 апреля 2017"></label>
+        <label>дата выезда:<input class="form-date form-departure-date" type="text" value="4 июля 2017"></label>
+        <div class="age-block">
+          <label for="form-age-adults" class="adults">взрослые:</label><input id="form-age-adults" class="form-age form-age-adults" type="text" value="2">
+          <label for="form-age-kids" class="kids">дети:</label><input id="form-age-kids" class="form-age form-age-kids" type="text" value="0">
+        </div>   
+        <input class="button" type="submit" value="Найти">
+      </form>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498663.7736196967!2d-112.10094288629567!3d34.806614125845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sbg!4v1602272688333!5m2!1sru!2sbg"
         width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
+        tabindex="0" class="sedona-map"></iframe>
     </section>
   </main>
   <footer class="main-footer page-footer">
@@ -128,7 +136,7 @@
         </ul>
       </div>
       <div class="copyright">
-        <p>Website by<a href="#" class="copyright-logo"></a></p>
+        <a href="https://htmlacademy.ru" class="copyright-logo">Website by</a>
       </div>
     </div>
   </footer>
