@@ -17,7 +17,7 @@
         <li><a href="">Фото и видео</a></li>
         <li>
           <a href="#" class="main-header-logo">
-            <img src="/img/logo.svg" width="138px" height="70px" alt="logo">
+            <img src="img/logo.svg" width="138px" height="70px" alt="logo">
           </a>
         </li>
         <li><a href="">Карта штата</a></li>
@@ -101,13 +101,33 @@
     </section>
     <section class="hotel-search-block">
       <form class="hotel-search-form">
-        <label>дата заезда:<input class="form-date form-arrival-date" type="text" value="24 апреля 2017"></label>
-        <label>дата выезда:<input class="form-date form-departure-date" type="text" value="4 июля 2017"></label>
+        <div class="form-arrival-date-block">
+          <label for="form-arrival-date">дата заезда:</label>
+          <div class="date-block">
+            <input class="form-date form-arrival-date" id="form-arrival-date" type="text" value="24 апреля 2017">
+          </div>
+        </div>
+        <div class="form-departure-date-block">
+          <label for="form-departure-date">дата выезда:</label>
+          <div class="date-block">
+            <input class="form-date form-departure-date" id="form-departure-date" type="text" value="4 июля 2017">
+          </div>
+        </div>
         <div class="age-block">
-          <label for="form-age-adults" class="adults">взрослые:</label><input id="form-age-adults" class="form-age form-age-adults" type="text" value="2">
-          <label for="form-age-kids" class="kids">дети:</label><input id="form-age-kids" class="form-age form-age-kids" type="text" value="0">
+          <label for="form-age-adults" class="adults">взрослые:</label>
+          <div class="form-age-block">
+            <button class="button-plus"></button>
+            <input id="form-age-adults" class="form-age form-age-adults" type="text" value="2">
+            <button class="button-minus"></button>
+          </div>
+          <label for="form-age-kids" class="kids">дети:</label>
+          <div class="form-age-block">
+            <button class="button-plus"></button>
+            <input id="form-age-kids" class="form-age form-age-kids" type="text" value="0">
+            <button class="button-minus"></button>
+          </div>
         </div>   
-        <input class="button" type="submit" value="Найти">
+        <input class="button-find" type="submit" value="Найти">
       </form>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498663.7736196967!2d-112.10094288629567!3d34.806614125845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sbg!4v1602272688333!5m2!1sru!2sbg"

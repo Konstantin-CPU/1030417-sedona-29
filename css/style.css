@@ -367,6 +367,7 @@ button:focus {
     height: 38px;
     box-sizing: border-box;
     outline: none;
+    width: 100%;
 }
 
 .age-block {
@@ -374,29 +375,106 @@ button:focus {
     justify-content: space-between;
 }
 
-.form-date {
+.date-block {
     width: 346px;
     position: relative;
 }
 
-.form-age {
-    text-align: center;
+.date-block::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    width: 21px;
+    height: 23px;
+    background: url("../img/search-form-calendar-icon.svg") 50% no-repeat;
+}
+
+.date-block:hover::after {
+    background-image: url("../img/calendar-hover.svg");
+}
+
+.date-block:active::after {
+    background-image: url("../img/calendar-active.svg");
+}
+
+.form-arrival-date-block,
+.form-departure-date-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-date::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    width: 21px;
+    height: 23px;
+    background: url("../img/search-form-calendar-icon.svg") 50% no-repeat;
 }
 
 .form-age {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.form-age-block {
     width: 114px;
+    position: relative;
+}
+
+.form-age-block button {
+    position: absolute;
+    border: none;
+    background-color: none;
+    outline: none;
+}
+
+.button-plus {
+    background: url("../img/search-form-plus-icon.svg") 50% no-repeat;
+    top: 14px;
+    right: 14px;
+    width: 11px;
+    height: 11px;
+}
+
+.button-minus {
+    background: url("../img/search-form-minus-icon.svg") 50% no-repeat;
+    top: 14px;
+    left: 14px;
+    width: 11px;
+    height: 11px;
+}
+
+.button-plus:hover {
+    background-image: url("../img/plus-hover.svg");
+}
+
+.button-plus:active {
+    background-image: url("../img/plus-active.svg");
+}
+
+.button-minus:hover {
+    background-image: url("../img/minus-hover.svg");
+}
+
+.button-minus:active {
+    background-image: url("../img/minus-active.svg");
 }
 
 .hotel-search-form input:hover {
     background-color: var(--deeper-grey);
 }
 
-.hotel-search-form input:active {
+.hotel-search-form input:not(.button-find):active {
     background-color: var(--basic-white);
     border: 2px solid var(--forms-background);
 }
 
-.hotel-search-form .button {
+.hotel-search-form .button-find {
     height: 58px;
     font-style: normal;
     font-weight: bold;
@@ -404,14 +482,16 @@ button:focus {
     line-height: 26px;
     background-color: var(--basic-blue);
     outline: none;
+    color: var(--basic-white)
 }
 
-.hotel-search-form .button:hover {
+.hotel-search-form .button-find:hover {
     background-color: var(--deeper-blue);
 }
 
-.hotel-search-form .button:active {
+.hotel-search-form .button-find:active {
     background-color: var(--deep-blue);
+    color: var(--button-active-color);
 }
 
 /* Footer */
