@@ -93,6 +93,19 @@ button:focus {
     padding: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* Main Navigation */
 
 .main-header {
@@ -606,6 +619,122 @@ button:focus {
 .hidden-headings {
     display: none;
 }
+
+.hotel-page-filters {
+    background: url("../img/catalog-filter-background.png") no-repeat 50%;
+    min-height: 217px;
+    box-sizing: border-box;
+    padding: 27px 73px 31px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.infrastructure {
+    width: 135px;
+}
+
+.hotel-page-filters legend {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.infrastructure legend,
+.types legend {
+    margin-bottom: 24px;
+}
+
+.checkbox-list li{
+    margin-bottom: 23px;
+    position: relative;
+}
+
+.checkbox-list li:last-child{
+    margin-bottom: 0;
+}
+
+.checkbox-list label {
+    display: block;
+    padding-left: 40px;
+    position: relative;
+}
+
+.checkbox-list label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background: url("../img/checkbox-off.svg") 50% no-repeat;
+}
+
+.price-group {
+    width: 317px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.price-group legend {
+    margin-bottom: 10.5px;
+}
+
+.price-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    align-items: center;
+    padding: 6.5px 36px 8.5px 56px;
+}
+
+.price-controls label {
+    display: flex;
+    height: 21px;
+}
+
+.from {
+    grid-column: 1/2;
+    width: 58px;
+}
+
+.to {
+    grid-column: 2/3;
+    width: 83px;
+}
+
+.price-controls input {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.hotel-page-filters fieldset {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid lime;
+}
+
+
+
+
+
+
+
+
 
 .main-catalog {
     font-style: normal;
