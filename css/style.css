@@ -46,6 +46,7 @@
     --bottom-borders: #e5e5e5;
     --deeper-grey: #ebebeb;
     --white-opacity0-3: rgba(255, 255, 255, 0.3);
+    --black-opacity0-3: rgba(0, 0, 0, 0.3);
 }
 .page {
     background-color: var(--forms-background);
@@ -148,6 +149,11 @@ button:focus {
     padding-top: 15px;
 }
 
+.main-header-logo {
+    position: relative;
+    z-index: 1;
+}
+
 /* Main's blocks */
 
 .container {
@@ -156,6 +162,7 @@ button:focus {
 }
 
 .welcome-sedona {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 509px;
@@ -179,6 +186,19 @@ button:focus {
 .welcome-sedona img:last-child {
     margin: auto;
 } 
+
+.welcome-sedona::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-color: inherit;
+    background-image: url("../img/main-page-image-shape-bottom.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 
 .heading {
     display: none;
@@ -818,35 +838,35 @@ button:focus {
     margin-right: 32px;
 }
 
-.sort-button {
-    background: none;
-    border: none;
-}
-
 .item-change {
     display: flex;
 }
 
 .sort-button {
+    background: none;
+    border: none;
     padding: 0;
 }
 
-.sort-button:not(.active) {
-    color: var(--button-grey-color);
-    border-bottom: 1px var(--basic-blue) dashed;
+.sort-button {
+    color:  var(--black-opacity0-3);
+    border-bottom: 1px dashed var(--basic-blue);
 }
 
-.sort-button.active {
+.sort-button:hover {
     color: var(--basic-blue);
-}
-
-.sort-button:hover:not(.active) {
-    color: var(--basic-blue);
-    border-bottom: 1px var(--basic-blue) dashed;
 }
 
 .sort-button:active {
     color: var(--main-color);
+    border: none;
+}
+
+.sort-button.active,
+.sort-button.active:hover,
+.sort-button.active:active {
+    color: var(--basic-blue);
+    border: none;
 }
 
 .item-change-button {
