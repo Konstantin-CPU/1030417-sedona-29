@@ -66,6 +66,7 @@
     text-transform: uppercase;
     background-color: var(--basic-white);
     min-height: 100%;
+    position: relative;
 }
 
 a {
@@ -486,6 +487,16 @@ button:focus {
     height: 11px;
 }
 
+.hotel-search-block {
+    position: relative;
+}
+
+.hotel-search-form {
+    position: absolute;
+    top: 0;
+    left: 315px;
+}
+
 .button-plus:hover {
     background-image: url("../img/plus-hover.svg");
 }
@@ -531,10 +542,21 @@ button:focus {
     color: var(--button-active-color);
 }
 
+.sedona-map {
+    height: 594px;
+}
+
 /* Footer */
 
 .main-footer {
     background-color: var(--footer-background);
+}
+
+.main-page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1200px;
 }
 
 .footer-contacts {
