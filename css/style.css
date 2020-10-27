@@ -47,6 +47,7 @@
     --deeper-grey: #ebebeb;
     --white-opacity0-3: rgba(255, 255, 255, 0.3);
     --black-opacity0-3: rgba(0, 0, 0, 0.3);
+    --main-page-shadow: rgba(0, 1, 1, 0.2);
 }
 .page {
     background-color: var(--forms-background);
@@ -160,6 +161,7 @@ button:focus {
 .container {
     background-color: transparent;
     width: 100%;
+    box-shadow: 0px 5px 15px var(--main-page-shadow);
 }
 
 .welcome-sedona {
@@ -170,21 +172,21 @@ button:focus {
     background: url("../img/background-photo-main-page.jpg") 50% no-repeat;
 }
 
-.welcome-sedona img {
+.welcome-sedona .welcome-img {
     display: block;
     margin: 0 auto;
 }
 
-.welcome-sedona img:first-child {
+.welcome-sedona .welcome-img:first-child {
     margin-top: auto;
     margin-bottom: 11px;
 } 
 
-.welcome-sedona img:nth-child(2) {
+.welcome-sedona .welcome-img:nth-child(2) {
     margin-bottom: auto;
 } 
 
-.welcome-sedona img:last-child {
+.welcome-sedona .welcome-img:last-child {
     margin: auto;
 } 
 
@@ -254,8 +256,7 @@ button:focus {
     height: 256px;
 }
 
-.advantage1 div,
-.advantage2 div {
+.advs-subcontainer {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -342,7 +343,7 @@ button:focus {
     margin-top: auto;
 }
 
-.interested p {
+.interested-main-text {
     margin-bottom: auto;
 }
 
@@ -415,7 +416,7 @@ button:focus {
     position: relative;
 }
 
-.form-date + div {
+.form-date + .icon-block {
     display: inline-block;
     position: absolute;
     top: 7px;
@@ -427,12 +428,12 @@ button:focus {
     background-position: 50%;
 }
 
-.form-date:hover + div,
-.form-date:focus + div {
+.form-date:hover + .icon-block {
     background-image: url("../img/calendar-hover.svg");
 }
 
-.form-date:active + div {
+.form-date:active + .icon-block,
+.form-date:focus + .icon-block {
     background-image: url("../img/calendar-active.svg");
 }
 
@@ -440,16 +441,6 @@ button:focus {
 .form-departure-date-block {
     display: flex;
     justify-content: space-between;
-}
-
-.form-date::after {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: 9px;
-    width: 21px;
-    height: 23px;
-    background: url("../img/search-form-calendar-icon.svg") 50% no-repeat;
 }
 
 .form-age {
@@ -464,11 +455,13 @@ button:focus {
     position: relative;
 }
 
-.form-age-block button {
+.form-age-block .button-plus,
+.form-age-block .button-minus {
     position: absolute;
     border: none;
     background-color: none;
     outline: none;
+    cursor: pointer;
 }
 
 .button-plus {
@@ -684,14 +677,13 @@ button:focus {
     width: 135px;
 }
 
-.hotel-page-filters legend {
+.hotel-page-filters .checkbox-sector-name {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
 }
 
-.infrastructure legend,
-.types legend {
+.checkbox-sector-name {
     margin-bottom: 24px;
 }
 
@@ -717,6 +709,7 @@ button:focus {
     width: 23px;
     height: 23px;
     background: url("../img/checkbox-off.svg") 50% no-repeat;
+    cursor: pointer;
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -725,15 +718,13 @@ button:focus {
     background: url("../img/checkbox-on.svg") 50% no-repeat;
 }
 
-
-
 .price-group {
     width: 317px;
     display: flex;
     flex-direction: column;
 }
 
-.price-group legend {
+.price-group .checkbox-sector-name {
     margin-bottom: 10.5px;
 }
 
@@ -750,7 +741,7 @@ button:focus {
     background-repeat: no-repeat;
 }
 
-.price-controls span {
+.price-controls .price-value {
     margin-left: 5px;
 }
 
@@ -812,7 +803,7 @@ button:focus {
     color: var(--main-color);
 }
 
-.hotel-page-filters fieldset {
+.hotel-page-filters .checkboxs-block {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -844,7 +835,14 @@ button:focus {
     align-items: center;
 }
 
-.sort-container div {
+.sort {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sort-buttons-block {
     display: flex;
     margin-right: auto;
     width: 517px;
@@ -951,7 +949,7 @@ button:focus {
     display: flex;
 }
 
-.hotel img {
+.hotel-picture {
     width: 135px;
     height: 90px;
     margin-right: 30px;
@@ -970,7 +968,8 @@ button:focus {
     margin-bottom: -5px;
 }
 
-.info p{
+.info .hotel-type,
+.info .hotel-price{
     display: inline-block;
     width: 120px;
 }
@@ -979,7 +978,7 @@ button:focus {
     display: flex;
 }
 
-.hotel-buttons a {
+.hotel-buttons .button {
     display: flex;
     align-items: center;
     justify-content: center;
