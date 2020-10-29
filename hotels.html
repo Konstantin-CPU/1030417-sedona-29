@@ -12,15 +12,15 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Информация</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Фото и видео</a></li>
+        <li class="site-navigation-item">
           <a href="index.html" class="main-header-logo">
             <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
           </a>
         </li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="hotels.html" class="active">Гостиницы</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Карта штата</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path active" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -33,40 +33,40 @@
           <fieldset class="infrastructure checkboxs-block">
             <legend class="checkbox-sector-name">Инфраструктура:</legend>
             <ul class="checkbox-list list">
-              <li>
+              <li class="checkbox-list-item">
                 <input class="visually-hidden checkbox" type="checkbox" checked id="SP">
                 <div class="checkbox-icon"></div>
-                <label for="SP">Бассейн</label>
+                <label class="checkbox-value" for="SP">Бассейн</label>
               </li>
-              <li>
+              <li class="checkbox-list-item">
                 <input class="visually-hidden checkbox" type="checkbox" id="parking">
                 <div class="checkbox-icon"></div>
-                <label for="parking">Парковка</label>
+                <label class="checkbox-value" for="parking">Парковка</label>
               </li>
-              <li>
+              <li class="checkbox-list-item">
                 <input class="visually-hidden checkbox" type="checkbox" id="wifi">
                 <div class="checkbox-icon"></div>
-                <label for="wifi">Wi-Fi</label>
+                <label class="checkbox-value" for="wifi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="types checkboxs-block">
             <legend class="checkbox-sector-name">Тип жилья:</legend>
             <ul class="checkbox-list list">
-              <li>
+              <li class="checkbox-list-item">
                 <input class="visually-hidden checkbox blocked" type="checkbox" checked id="hotel">
                 <div class="checkbox-icon"></div>
-                <label for="hotel">Гостиница</label>
+                <label class="checkbox-value" for="hotel">Гостиница</label>
               </li>
-              <li>
+              <li class="checkbox-list-item">
                 <input class="visually-hidden checkbox" type="checkbox" checked id="motel">
                 <div class="checkbox-icon"></div>
-                <label for="motel">Мотель</label>
+                <label class="checkbox-value" for="motel">Мотель</label>
               </li>
-              <li>
+              <li class="checkbox-list-item">
                 <input class="visually-hidden checkbox" type="checkbox" checked id="apartments">
                 <div class="checkbox-icon"></div>
-                <label for="apartments">Апартаменты</label>
+                <label class="checkbox-value" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -98,13 +98,13 @@
           <p class="results">Найдено:<span>3</span></p>
           <h3 class="sort">Сортировка:</h3>
           <ul class="list sort-list">
-            <li>
+            <li class="sort-list-item">
               <button class="sort-button active" disabled>По цене</button>
             </li>
-            <li>
+            <li class="sort-list-item">
               <button class="sort-button">По типу</button>
             </li>
-            <li>
+            <li class="sort-list-item">
               <button class="sort-button">По рейтингу</button>
             </li>
           </ul>
@@ -122,8 +122,8 @@
         <li class="hotel hotel1">
           <img src="img/Amara-resort-picture.jpg" class="hotel-picture" width="135" height="90" alt="hotel's_picture">
           <div class="hotels-main-info-containter">
-            <a class="hotel-name" href="">
-              <h3>Amara Resort & Spa</h3>
+            <a class="hotel-name-block" href="">
+              <h3 class="hotel-name">Amara Resort & Spa</h3>
             </a>
             <div class="info">
               <p class="hotel-type">Гостиница</p>
@@ -137,13 +137,13 @@
           <!-- Список для звезд -->
           <div class="rating-container">
             <ul class="star-list list">
-              <li>
+              <li class="star-list-item">
               </li>
-              <li>
+              <li class="star-list-item">
               </li>
-              <li>
+              <li class="star-list-item">
               </li>
-              <li>
+              <li class="star-list-item">
               </li>
             </ul>
             <p class="rating">Рейтинг: 8,5</p>
@@ -152,8 +152,8 @@
         <li class="hotel hotel2">
           <img src="img/desert-quail-inn-picture.jpg" class="hotel-picture" width="135" height="90" alt="hotel's_picture">
           <div class="hotels-main-info-containter">
-            <a class="hotel-name" href="">
-              <h3>Desert Quail Inn</h3>
+            <a class="hotel-name-block" href="">
+              <h3 class="hotel-name">Desert Quail Inn</h3>
             </a>
             <div class="info">
               <p class="hotel-type">Мотель</p>
@@ -167,11 +167,11 @@
           <!-- Список для звезд -->
           <div class="rating-container">
             <ul class="star-list list">
-              <li>
+              <li class="star-list-item">
               </li>
-              <li>
+              <li class="star-list-item">
               </li>
-              <li>
+              <li class="star-list-item">
               </li>
             </ul>
             <p class="rating">Рейтинг: 8,9</p>
@@ -180,8 +180,8 @@
         <li class="hotel hotel3">
           <img src="img/villas-at-poco-diablo-picture.jpg" class="hotel-picture" width="135" height="90" alt="hotel's_picture">
           <div class="hotels-main-info-containter">
-            <a class="hotel-name" href="">
-              <h3>Villas at Poco Diablo</h3>
+            <a class="hotel-name-block" href="">
+              <h3 class="hotel-name">Villas at Poco Diablo</h3>
             </a>
             <div class="info">
               <p class="hotel-type">Апартаменты</p>
@@ -195,9 +195,9 @@
           <!-- Список для звезд -->
           <div class="rating-container">
             <ul class="star-list list">
-              <li>
+              <li class="star-list-item">
               </li>
-              <li>
+              <li class="star-list-item">
               </li>
             </ul>
             <p class="rating">Рейтинг: 9,2</p>
@@ -215,13 +215,13 @@
       </div>
       <div class="footer-social">
         <ul class="socials-list list">
-          <li>
+          <li class="social-list-item">
             <a class="social-button social-button-tw" href="#"></a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a class="social-button social-button-fb" href="#"></a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a class="social-button social-button-yt" href="#"></a>
           </li>
         </ul>

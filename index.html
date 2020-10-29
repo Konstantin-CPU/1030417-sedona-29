@@ -13,15 +13,15 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="site-navigation list">
-        <li><a href="" class="active">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path active" href="">Информация</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Фото и видео</a></li>
+        <li class="site-navigation-item">
           <a href="#" class="main-header-logo">
             <img src="img/logo.svg" width="138px" height="70px" alt="logo">
           </a>
         </li>
-        <li><a href="">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Карта штата</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -38,7 +38,7 @@
     <section class="advantages">
       <div class="advantages-title advantages-block-title">
         <h2 class="block-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="heading-additional-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <div class="advantage1">
         <div class="advs-subcontainer">
@@ -51,15 +51,15 @@
       </div>
       <div class="advantages-stuff">
         <ul class="advantages-stuff-list list">
-          <li>
+          <li class="advantages-stuff-list-item">
             <h4 class="advantages-reasons advantages-title">Жильё</h4>
             <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="advantages-stuff-list-item">
             <h4 class="advantages-reasons advantages-title">Еда</h4>
             <p>Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!</p>
           </li>
-          <li>
+          <li class="advantages-stuff-list-item">
             <h4 class="advantages-reasons advantages-title">Сувениры</h4>
             <p>Не только китайского, но и местного<br> производства!</p>
           </li>
@@ -102,34 +102,34 @@
     <section class="hotel-search-block">
       <form class="hotel-search-form">
         <div class="form-arrival-date-block">
-          <label for="form-arrival-date">дата заезда:</label>
+          <label class="input-value" for="form-arrival-date">дата заезда:</label>
           <div class="date-block">
-            <input class="form-date form-arrival-date" id="form-arrival-date" type="text" value="24 апреля 2017">
+            <input class="form-date form-arrival-date input" id="form-arrival-date" type="text" value="24 апреля 2017">
             <div class="icon-block"></div>
           </div>
         </div>
         <div class="form-departure-date-block">
-          <label for="form-departure-date">дата выезда:</label>
+          <label class="input-value" for="form-departure-date">дата выезда:</label>
           <div class="date-block">
-            <input class="form-date form-departure-date" id="form-departure-date" type="text" value="4 июля 2017">
+            <input class="form-date form-departure-date input" id="form-departure-date" type="text" value="4 июля 2017">
             <div class="icon-block"></div>
           </div>
         </div>
         <div class="age-block">
-          <label for="form-age-adults" class="adults">взрослые:</label>
+          <label for="form-age-adults" class="adults input-value">взрослые:</label>
           <div class="form-age-block">
             <button class="button-plus"></button>
-            <input id="form-age-adults" class="form-age form-age-adults" type="text" value="2">
+            <input id="form-age-adults" class="form-age form-age-adults input" type="text" value="2">
             <button class="button-minus"></button>
           </div>
-          <label for="form-age-kids" class="kids">дети:</label>
+          <label for="form-age-kids" class="kids input-value">дети:</label>
           <div class="form-age-block">
             <button class="button-plus"></button>
-            <input id="form-age-kids" class="form-age form-age-kids" type="text" value="0">
+            <input id="form-age-kids" class="form-age form-age-kids input" type="text" value="0">
             <button class="button-minus"></button>
           </div>
         </div>   
-        <input class="button-find" type="submit" value="Найти">
+        <input class="button-find input" type="submit" value="Найти">
       </form>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498663.7736196967!2d-112.10094288629567!3d34.806614125845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sbg!4v1602272688333!5m2!1sru!2sbg"
@@ -146,13 +146,13 @@
       </div>
       <div class="footer-social">
         <ul class="socials-list">
-          <li>
+          <li class="social-list-item">
             <a class="social-button social-button-tw" href="#"></a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a class="social-button social-button-fb" href="#"></a>
           </li>
-          <li>
+          <li class="social-list-item">
             <a class="social-button social-button-yt" href="#"></a>
           </li>
         </ul>

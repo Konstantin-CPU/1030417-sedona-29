@@ -135,11 +135,11 @@ button:focus {
     padding: 0;
 }
 
-.site-navigation li:not(:first-child) a:hover {
+.site-navigation-item:not(:first-child) .site-navigation-item-path:hover {
     color: var(--basic-blue);
 }
 
-.site-navigation li:not(:first-child) a:active {
+.site-navigation-item:not(:first-child) .site-navigation-item-path:active {
     color: var(--button-grey-color);
 }
 
@@ -147,7 +147,7 @@ button:focus {
     color: var(--button-brown-color);
 }
 
-.site-navigation li:not(:nth-child(3)) {
+.site-navigation-item:not(:nth-child(3)) {
     padding-top: 15px;
 }
 
@@ -242,7 +242,7 @@ button:focus {
     margin-top: auto;
 }
 
-.advantages-block-title p {
+.heading-additional-text {
     font-weight: normal;
     font-size: 14px;
     margin-bottom: auto;
@@ -280,28 +280,28 @@ button:focus {
     align-items: center;
 }
 
-.advantages-stuff-list li {
+.advantages-stuff-list-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.advantages-stuff-list li:first-child::before{
+.advantages-stuff-list-item:first-child::before{
     content: "";
     width: 75px;
     height: 72px;
     background: url("../img/house-icon.svg") 50% no-repeat;
 }
 
-.advantages-stuff-list li:nth-child(2)::before{
+.advantages-stuff-list-item:nth-child(2)::before{
     content: "";
     width: 75px;
     height: 70px;
     background: url("../img/food-icon.svg") 50% no-repeat;
 }
 
-.advantages-stuff-list li:last-child::before{
+.advantages-stuff-list-item:last-child::before{
     content: "";
     width: 64px;
     height: 77px;
@@ -381,14 +381,14 @@ button:focus {
     justify-content: space-between;
 }
 
-.hotel-search-form label {
+.hotel-search-form .input-value {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .hotel-search-form,
-.hotel-search-form input {
+.hotel-search-form .input {
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
@@ -396,7 +396,7 @@ button:focus {
     line-height: 26px;
 }
 
-.hotel-search-form input {
+.hotel-search-form .input {
     background-color: var(--forms-background);
     border: none;
     padding: 6px 9px;
@@ -435,6 +435,10 @@ button:focus {
 .form-date:active + .icon-block,
 .form-date:focus + .icon-block {
     background-image: url("../img/calendar-active.svg");
+}
+
+.hotel-search-form .input-value {
+    padding-top: 5px;
 }
 
 .form-arrival-date-block,
@@ -506,11 +510,11 @@ button:focus {
     background-image: url("../img/minus-active.svg");
 }
 
-.hotel-search-form input:hover {
+.hotel-search-form .input:hover {
     background-color: var(--deeper-grey);
 }
 
-.hotel-search-form input:not(.button-find):active {
+.hotel-search-form .input:not(.button-find):active {
     background-color: var(--basic-white);
     border: 2px solid var(--forms-background);
 }
@@ -571,13 +575,12 @@ button:focus {
     padding: 0;
 }
 
-.socials-list li,
 .social-button {
     width: 46px;
     height: 48px;
 }
 
-.socials-list li:not(:last-child) {
+.social-list-item:not(:last-child) {
     margin-right: 6px;
 }
 
@@ -687,19 +690,13 @@ button:focus {
     margin-bottom: 24px;
 }
 
-.checkbox-list li{
+.checkbox-list-item{
     margin-bottom: 23px;
     position: relative;
 }
 
-.checkbox-list li:last-child{
+.checkbox-list-item:last-child{
     margin-bottom: 0;
-}
-
-.checkbox-list label {
-    display: block;
-    padding-left: 40px;
-    position: relative;
 }
 
 .checkbox + .checkbox-icon {
@@ -716,6 +713,13 @@ button:focus {
     width: 27px;
     height: 23px;
     background: url("../img/checkbox-on.svg") 50% no-repeat;
+}
+
+.checkbox-value {
+    cursor: pointer;
+    display: block;
+    padding-left: 40px;
+    position: relative;
 }
 
 .price-group {
@@ -854,7 +858,7 @@ button:focus {
     display: flex;
 }
 
-.sort-list li:not(:last-child) {
+.sort-list-item:not(:last-child) {
     margin-right: 32px;
 }
 
@@ -926,13 +930,13 @@ button:focus {
 }
 
 .results,
-.hotel-name {
+.hotel-name-block {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
 }
 
-.hotel-name h3 {
+.hotel-name {
     margin: 0;
     padding: 0;
 }
@@ -996,7 +1000,7 @@ button:focus {
     display: flex;
 }
 
-.star-list li {
+.star-list-item {
     width: 18px;
     height: 17px;
     background: url("../img/star.svg") no-repeat 50% 50%;
