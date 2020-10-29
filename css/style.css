@@ -97,6 +97,11 @@ button:focus {
     padding: 0;
 }
 
+.heading {
+    margin: 0;
+    padding: 0;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -115,7 +120,6 @@ button:focus {
 .main-header {
     min-height: 56px;
     text-align: center;
-    margin-bottom: -20px;
 }
 
 .main-navigation {
@@ -130,7 +134,7 @@ button:focus {
 .site-navigation {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 0;
     padding: 0;
 }
@@ -149,19 +153,35 @@ button:focus {
 
 .site-navigation-item:not(:nth-child(3)) {
     padding-top: 15px;
+    padding-bottom: 15px;
 }
+
+.site-navigation-item:first-child {
+    margin-right: 134px;
+}
+
+.site-navigation-item:nth-child(2) {
+    margin-right: 133px;
+}
+
+.site-navigation-item:nth-child(3),
+.site-navigation-item:nth-child(4) {
+    margin-right: 147px;
+}
+
+
 
 .main-header-logo {
     position: relative;
     z-index: 1;
 }
-
 /* Main's blocks */
 
 .container {
     background-color: transparent;
     width: 100%;
     box-shadow: 0px 5px 15px var(--main-page-shadow);
+    margin-top: -22px;
 }
 
 .welcome-sedona {
@@ -178,7 +198,7 @@ button:focus {
 }
 
 .welcome-sedona .welcome-img:first-child {
-    margin-top: auto;
+    margin-top: 76.35px;
     margin-bottom: 11px;
 } 
 
@@ -187,7 +207,9 @@ button:focus {
 } 
 
 .welcome-sedona .welcome-img:last-child {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80.76px;
 } 
 
 .welcome-sedona::after {
@@ -201,10 +223,6 @@ button:focus {
     background-image: url("../img/main-page-image-shape-bottom.svg");
     background-repeat: no-repeat;
     z-index: 1;
-}
-
-.heading {
-    display: none;
 }
 
 .advantages,
@@ -239,13 +257,13 @@ button:focus {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    margin-top: auto;
+    margin-top: 42px;
 }
 
 .heading-additional-text {
     font-weight: normal;
     font-size: 14px;
-    margin-bottom: auto;
+    margin-bottom: 52px;
 }
 
 .advantage1,
@@ -257,80 +275,103 @@ button:focus {
 }
 
 .advs-subcontainer {
+    min-width: 400px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.advantages-stuff-list,
-.advantages3-5-list {
-    list-style: none;
+.advs-subcontainer:first-child {
+    padding-top: 47px;
+}
+
+.advs-subcontainer:last-child {
+    padding-top: 50px;
+}
+
+.advs-subcontainer-title {
+    margin: 0;
+}
+
+.number {
+    margin-top: 25px;
+    margin-bottom: 23px;
 }
 
 .advantages-stuff {
-    padding: 75px 65px;
+    height: 330px;
+    text-align: center;
+    padding-top: 61px;
+    padding-bottom: 82px;
+    box-sizing: border-box;
 }
 
 .advantages-stuff-list {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
     height: 100%;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .advantages-stuff-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%;
+    position: relative;
 }
 
-.advantages-stuff-list-item:first-child::before{
+.advantages-stuff-title {
+    margin-top: 97px;
+    margin-bottom: 26px;
+}
+
+.advantages-stuff-list-item:before {
     content: "";
+    position: absolute;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.advantages-stuff-list-item:first-child:before {
     width: 75px;
     height: 72px;
-    background: url("../img/house-icon.svg") 50% no-repeat;
+    background-image: url("../img/house-icon.svg");
+    left: 163px;
 }
 
-.advantages-stuff-list-item:nth-child(2)::before{
-    content: "";
+.advantages-stuff-list-item:nth-child(2):before {
     width: 75px;
     height: 70px;
-    background: url("../img/food-icon.svg") 50% no-repeat;
+    background-image: url("../img/food-icon.svg");
+    left: 163px;
 }
 
-.advantages-stuff-list-item:last-child::before{
-    content: "";
+.advantages-stuff-list-item:last-child:before {
     width: 64px;
     height: 77px;
-    background: url("../img/souvenir-icon.svg") 50% no-repeat;
+    background-image: url("../img/souvenir-icon.svg");
+    top: -6px;
+    left: 167px;
 }
 
 .advantages3-5 {
     background-color: var(--basic-grey);
-    padding: 50px 80px;
+    padding-top: 47px;
+    padding-bottom: 54px;
+    box-sizing: border-box;
+    height: 256px;
+    text-align: center;
 }
 
 .advantages3-5-list {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .advantages-reasons {
     line-height: 21px;
-    margin: 20px 0;
 }
 
 .interested {
     margin: 0 auto;
-    width: 568px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
     height: 291px;
     justify-content: space-between;
 }
@@ -340,11 +381,13 @@ button:focus {
     font-weight: bold;
     font-size: 30px;
     line-height: 24px;
-    margin-top: auto;
+    margin-top: 55px;
+    margin-bottom: 20px;
 }
 
 .interested-main-text {
     margin-bottom: auto;
+    line-height: 24px;
 }
 
 .interested-button-search {
@@ -354,8 +397,9 @@ button:focus {
     font-size: 21px;
     line-height: 26px;
     border: none;
-    width: 100%;
+    width: 568px;
     height: 86px;
+    align-self: center;
 }
 
 .interested-button-search:hover {
@@ -369,7 +413,7 @@ button:focus {
 
 .hotel-search-form {
     width: 568px;
-    height: 395px;
+    min-height: 395px;
     box-sizing: border-box;
     padding: 55px;
     background: var(--basic-white);
@@ -378,7 +422,6 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .hotel-search-form .input-value {
@@ -406,9 +449,15 @@ button:focus {
     width: 100%;
 }
 
+.form-arrival-date-block,
+.form-departure-date-block {
+    margin-bottom: 30px;
+}
+
 .age-block {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 54px;
 }
 
 .date-block {
@@ -435,10 +484,6 @@ button:focus {
 .form-date:active + .icon-block,
 .form-date:focus + .icon-block {
     background-image: url("../img/calendar-active.svg");
-}
-
-.hotel-search-form .input-value {
-    padding-top: 5px;
 }
 
 .form-arrival-date-block,
@@ -562,17 +607,39 @@ button:focus {
     font-size: 21px;
     line-height: 26px;
     background-color: inherit;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    height: 127px;
     text-align: center;
-    align-items: center;
-    padding: 0 110px;
+}
+
+.contacts {
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 111px;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    grid-column: 1/2;
+}
+
+.contacts-call-us,
+.contacts-visit-us {
+    margin: 0;
+    padding: 0;
 }
 
 .socials-list {
     list-style: none;
     display: flex;
     padding: 0;
+    grid-column: 2/3;
+    margin-top: 36px;
+    margin-left: 125px;
 }
 
 .social-button {
@@ -626,6 +693,9 @@ button:focus {
     font-size: 14px;
     line-height: 26px;
     text-align: center;
+    grid-column: 3/4;
+    margin-top: 46px;
+    margin-left: -70px;
 }
 
 .copyright-logo {
