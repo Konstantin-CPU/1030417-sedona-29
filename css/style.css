@@ -140,7 +140,8 @@ button:focus {
     padding: 0;
 }
 
-.site-navigation-item .site-navigation-item-path:not(.active):hover {
+.site-navigation-item .site-navigation-item-path:not(.active):hover,
+.site-navigation-item .site-navigation-item-path:not(.active):focus {
     color: var(--basic-blue);
 }
 
@@ -400,7 +401,8 @@ button:focus {
     align-self: center;
 }
 
-.interested-button-search:hover {
+.interested-button-search:hover,
+.interested-button-search:focus {
     background-color: var(--button-brown-hover);
 }
 
@@ -475,12 +477,12 @@ button:focus {
     background-position: 50%;
 }
 
-.form-date:hover + .icon-block {
+.form-date:hover + .icon-block,
+.form-date:focus + .icon-block {
     background-image: url("../img/calendar-hover.svg");
 }
 
-.form-date:active + .icon-block,
-.form-date:focus + .icon-block {
+.form-date:active + .icon-block {
     background-image: url("../img/calendar-active.svg");
 }
 
@@ -511,6 +513,14 @@ button:focus {
     cursor: pointer;
 }
 
+.button-minus {
+    background: url("../img/search-form-minus-icon.svg") 50% no-repeat;
+    top: 14px;
+    left: 14px;
+    width: 11px;
+    height: 11px;
+}
+
 .button-plus {
     background: url("../img/search-form-plus-icon.svg") 50% no-repeat;
     top: 14px;
@@ -519,12 +529,22 @@ button:focus {
     height: 11px;
 }
 
-.button-minus {
-    background: url("../img/search-form-minus-icon.svg") 50% no-repeat;
-    top: 14px;
-    left: 14px;
-    width: 11px;
-    height: 11px;
+.button-minus:hover,
+.button-minus:focus {
+    background-image: url("../img/minus-hover.svg");
+}
+
+.button-minus:active {
+    background-image: url("../img/minus-active.svg");
+}
+
+.button-plus:hover,
+.button-plus:focus {
+    background-image: url("../img/plus-hover.svg");
+}
+
+.button-plus:active {
+    background-image: url("../img/plus-active.svg");
 }
 
 .hotel-search-block {
@@ -537,29 +557,21 @@ button:focus {
     left: 315px;
 }
 
-.button-plus:hover {
-    background-image: url("../img/plus-hover.svg");
-}
 
-.button-plus:active {
-    background-image: url("../img/plus-active.svg");
-}
 
-.button-minus:hover {
-    background-image: url("../img/minus-hover.svg");
-}
-
-.button-minus:active {
-    background-image: url("../img/minus-active.svg");
-}
-
-.hotel-search-form .input:hover {
+.hotel-search-form .input:not(.button-find):hover,
+.hotel-search-form .input:not(.button-find):focus {
     background-color: var(--deeper-grey);
 }
 
 .hotel-search-form .input:not(.button-find):active {
     background-color: var(--basic-white);
     border: 2px solid var(--forms-background);
+}
+
+.hotel-search-form .button-find:hover,
+.hotel-search-form .button-find:focus {
+    background-color: var(--deeper-blue);
 }
 
 .hotel-search-form .button-find {
@@ -573,7 +585,8 @@ button:focus {
     color: var(--basic-white)
 }
 
-.hotel-search-form .button-find:hover {
+.hotel-search-form .button-find:hover
+.hotel-search-form .button-find:focus {
     background-color: var(--deeper-blue);
 }
 
@@ -669,7 +682,8 @@ button:focus {
     background: var(--basic-blue) url("../img/youtube-icon.svg") 50% no-repeat;
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
     background-color: var(--deeper-blue);
 }
 
@@ -717,7 +731,8 @@ button:focus {
     background-repeat: no-repeat;
 }
 
-.copyright-logo:hover::after {
+.copyright-logo:hover::after,
+.copyright-logo:focus::after {
     background-image: url("../img/logo-htmlacademy-hover.svg");
 }
 
