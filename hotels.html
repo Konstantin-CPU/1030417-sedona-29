@@ -11,20 +11,20 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Информация</a></li>
+      <ul class="site-navigation list">
+        <li class="site-navigation-item"><a class="site-navigation-item-path" href="index.html">Информация</a></li>
         <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Фото и видео</a></li>
         <li class="site-navigation-item">
           <a href="index.html" class="main-header-logo">
-            <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
+            <img src="img/logo.svg" width="138px" height="70px" alt="logo">
           </a>
         </li>
         <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Карта штата</a></li>
-        <li class="site-navigation-item"><a class="site-navigation-item-path active" href="hotels.html">Гостиницы</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-path active" href="">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="hotels-page-container">
     <h1 class="heading hidden-headings">Гостиницы</h1>
     <section>
       <h2 class="hidden-headings">Фильтры</h2>
@@ -95,7 +95,7 @@
       <h2 class="heading hidden-headings">Найденные гостиницы</h2>
       <div class="sort-container">
         <div class="sort-buttons-block">
-          <p class="results">Найдено:<span>3</span></p>
+          <p class="results">Найдено:<span class="results-value">3</span></p>
           <h3 class="heading sort">Сортировка:</h3>
           <ul class="list sort-list">
             <li class="sort-list-item">
@@ -206,15 +206,14 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer page-catalog-footer">
+  <footer class="main-footer main-page-footer">
     <div class="footer-contacts">
-      <div class="contacts">
-        <p>#VISITSEDONA<br>
-          тел:<a class="footer-phone" href="tel:+74956660166">+7(495)666-01-66</a>
-        </p>
+      <div class="contacts hotels-page-contacts">
+        <p class="contacts-visit-us">#VISITSEDONA</p> 
+        <p class="contacts-call-us">тел:<a class="footer-phone" href="tel:+74956660166">+7(495)666-01-66</a></p>
       </div>
       <div class="footer-social">
-        <ul class="socials-list list">
+        <ul class="socials-list">
           <li class="social-list-item">
             <a class="social-button social-button-tw" href="#"></a>
           </li>
@@ -227,7 +226,7 @@
         </ul>
       </div>
       <div class="copyright">
-        <p>Website by<a href="#" class="copyright-logo"></a></p>
+        <a href="https://htmlacademy.ru" class="copyright-logo">Website by</a>
       </div>
     </div>
   </footer>

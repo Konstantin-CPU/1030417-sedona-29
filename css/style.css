@@ -68,6 +68,7 @@
     background-color: var(--basic-white);
     min-height: 100%;
     position: relative;
+    box-shadow: 0px 5px 15px var(--main-page-shadow);
 }
 
 a {
@@ -139,7 +140,7 @@ button:focus {
     padding: 0;
 }
 
-.site-navigation-item:not(:first-child) .site-navigation-item-path:hover {
+.site-navigation-item .site-navigation-item-path:not(.active):hover {
     color: var(--basic-blue);
 }
 
@@ -169,8 +170,6 @@ button:focus {
     margin-right: 147px;
 }
 
-
-
 .main-header-logo {
     position: relative;
     z-index: 1;
@@ -180,7 +179,6 @@ button:focus {
 .container {
     background-color: transparent;
     width: 100%;
-    box-shadow: 0px 5px 15px var(--main-page-shadow);
     margin-top: -22px;
 }
 
@@ -627,6 +625,10 @@ button:focus {
     grid-column: 1/2;
 }
 
+.hotels-page-contacts {
+    margin-top: 25px;
+}
+
 .contacts-call-us,
 .contacts-visit-us {
     margin: 0;
@@ -737,11 +739,11 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -40px;
+    margin-top: -24px;
 }
 
 .checkbox-fildset-group {
-    min-width: 380px;
+    min-width: 390px;
     display: flex;
     justify-content: space-between;
 }
@@ -757,11 +759,11 @@ button:focus {
 }
 
 .checkbox-sector-name {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .checkbox-list-item{
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     position: relative;
 }
 
@@ -807,12 +809,13 @@ button:focus {
     border: 2px solid var(--basic-white);
     box-sizing: border-box;
     border-radius: 2px;
-    padding: 7px 57px;
+    padding: 7px 50px 7px 57px;
     display: flex;
     justify-content: space-between;
     background-image: url("../img/slit-figure-price-form.svg");
     background-position: 50%;
     background-repeat: no-repeat;
+    height: 36px;
 }
 
 .price-controls .price-value {
@@ -822,27 +825,34 @@ button:focus {
 .filter-controls {
     width: 316px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 21px;
+}
+
+.from, .to {
+    margin-left: 10px;
 }
 
 .scale {
     width: 100%;
     height: 2px;
     background: var(--white-opacity0-3);
+    position: relative;
 }
 
 .bar {
     width: 248px;
     height: 100%;
     background-color: var(--basic-white);
+    position: absolute;
+    left: 14px;
 }
 
 .toggle {
     position: absolute;
     width: 19px;
     height: 21px;
-    top: -8px;
-    left: 0;
+    top: -10px;
+    left: 1px;
     background: url("../img/range-filter-button.svg") 50% no-repeat;
 }
 
@@ -851,7 +861,7 @@ button:focus {
 }
 
 .toggle-max {
-    left: 248px;
+    left: 253px;
 }
 
 .show-results-button {
@@ -868,6 +878,7 @@ button:focus {
     text-transform: uppercase;
     color: var(--basic-white);
     margin-top: 33px;
+    margin-left: -10px;
     align-self: center;
     outline: none;
 }
@@ -902,6 +913,11 @@ button:focus {
     border-bottom: 1px solid var(--bottom-borders);
 }
 
+.hotel {
+    position: relative;
+    z-index: 1;
+}
+
 .sort-container {
     display: flex;
     justify-content: space-between;
@@ -914,6 +930,7 @@ button:focus {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
+    margin-top: -3px;
 }
 
 .sort-buttons-block {
@@ -1006,9 +1023,18 @@ button:focus {
     line-height: 26px;
 }
 
+.results-value {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .hotel-name {
-    margin: 0;
-    padding: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: -5px;
 }
 
 .hotels-list {
@@ -1034,22 +1060,32 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .info {
     display: flex;
     text-align: left;
-    margin-bottom: -5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -5px;
 }
 
 .info .hotel-type,
 .info .hotel-price{
     display: inline-block;
-    width: 120px;
+    width: 115px;
+    margin: 0;
 }
 
 .hotel-buttons {
     display: flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .hotel-buttons .button {
@@ -1079,8 +1115,15 @@ button:focus {
 
 .rating {
     width: 110px;
+    padding: 3px 0 3px 15px;
+    box-sizing: border-box;
     text-align: center;
     margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
 }
 
 .hotel-name:hover {
