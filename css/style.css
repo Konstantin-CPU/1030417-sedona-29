@@ -557,8 +557,6 @@ button:focus {
     left: 315px;
 }
 
-
-
 .hotel-search-form .input:not(.button-find):hover,
 .hotel-search-form .input:not(.button-find):focus {
     background-color: var(--deeper-grey);
@@ -618,11 +616,18 @@ button:focus {
     font-size: 21px;
     line-height: 26px;
     background-color: inherit;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     box-sizing: border-box;
     height: 127px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 125px;
+    padding-right: 138px;
+}
+
+.footer-contacts-hotels-page {
+    padding-top: 5px;
 }
 
 .contacts {
@@ -630,16 +635,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 111px;
-    margin-right: auto;
-    margin-top: 20px;
-    padding-left: 20px;
     padding-bottom: 20px;
-    grid-column: 1/2;
-}
-
-.hotels-page-contacts {
-    margin-top: 25px;
 }
 
 .contacts-call-us,
@@ -652,9 +648,8 @@ button:focus {
     list-style: none;
     display: flex;
     padding: 0;
-    grid-column: 2/3;
-    margin-top: 36px;
-    margin-left: 125px;
+    margin-top: -3px;
+    margin-left: -10px;
 }
 
 .social-button {
@@ -709,9 +704,7 @@ button:focus {
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-    grid-column: 3/4;
-    margin-top: 46px;
-    margin-left: -70px;
+    margin-top: -10px;
 }
 
 .copyright-logo {
@@ -792,14 +785,26 @@ button:focus {
     left: 0;
     width: 23px;
     height: 23px;
-    background: url("../img/checkbox-off.svg") 50% no-repeat;
+    background-image: url("../img/checkbox-off.svg"); 
+    background-position: 50%;
+    background-position: no-repeat;
     cursor: pointer;
 }
 
 .checkbox:checked + .checkbox-icon {
     width: 27px;
     height: 23px;
-    background: url("../img/checkbox-on.svg") 50% no-repeat;
+    background-image: url("../img/checkbox-on.svg"); 
+    background-position: 50%;
+    background-position: no-repeat;
+}
+
+.checkbox:not(:checked).blocked-checkbox {
+    background-image: url("../img/checkbox-off-blocked.svg");
+}
+
+.checkbox:checked.blocked-checkbox {
+    background-image: url("../img/checkbox-on-blocked.svg");
 }
 
 .checkbox-value {
@@ -871,7 +876,8 @@ button:focus {
     background: url("../img/range-filter-button.svg") 50% no-repeat;
 }
 
-.toggle:hover {
+.toggle:hover,
+.toggle:focus {
     transform: scale(1.2);
 }
 
@@ -898,7 +904,8 @@ button:focus {
     outline: none;
 }
 
-.show-results-button:hover {
+.show-results-button:hover,
+.show-results-button:focus {
     background-color: var(--basic-white);
     color: var(--main-color);
 }
@@ -979,7 +986,8 @@ button:focus {
     border-bottom: 1px dashed var(--basic-blue);
 }
 
-.sort-button:hover {
+.sort-button:hover,
+.sort-button:focus {
     color: var(--basic-blue);
 }
 
@@ -1011,11 +1019,13 @@ button:focus {
     background: url("../img/icon-down-dir-normal.svg") 50% no-repeat;
 }
 
-.item-change-button-previous:hover {
+.item-change-button-previous:hover,
+.item-change-button-previous:focus {
     background: url("../img/icon-up-dir-hover.svg") 50% no-repeat;
 }
 
-.item-change-button-next:hover {
+.item-change-button-next:hover,
+.item-change-button-next:focus {
     background: url("../img/icon-down-dir-hover.svg") 50% no-repeat;
 }
 
@@ -1141,12 +1151,13 @@ button:focus {
     text-align: left;
 }
 
-.hotel-name:hover {
+.hotel-name:hover,
+.hotel-name:focus {
     color: var(--basic-blue);
 }
 
 .hotel-name:active {
-    color: var(--main-color);
+    color: var(--black-opacity0-3);
 }
 
 .more-info {
@@ -1159,7 +1170,8 @@ button:focus {
     margin-right: 6px;
 }
 
-.more-info:hover {
+.more-info:hover,
+.more-info:focus {
     background-color: var(--deeper-blue);
 }
 
@@ -1176,7 +1188,8 @@ button:focus {
     font-weight: 700;
 }
 
-.reservation:hover {
+.reservation:hover, 
+.reservation:focus {
     background-color: var(--button-brown-hover);
 }
 
