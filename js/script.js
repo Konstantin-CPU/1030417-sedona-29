@@ -1,19 +1,17 @@
-let buttonPopup = document.querySelector(".interested-button-search");
-let popupForm = document.querySelector(".hotel-search-form");
-let inputArrival = document.querySelector(".form-arrival-date");
-let inputDeparture = document.querySelector(".form-departure-date");
-let popupSubmitButton = document.querySelector(".button-find");
+var buttonPopup = document.querySelector(".interested-button-search");
+var popupForm = document.querySelector(".hotel-search-form");
+var inputArrival = document.querySelector(".form-arrival-date");
+var inputDeparture = document.querySelector(".form-departure-date");
+var popupSubmitButton = document.querySelector(".button-find");
 
-let isStorageSupport = true;
-let storage = "";
+var isStorageSupport = true;
+var storage = "";
 
 try {
   storage = localStorage.getItem("login");
 } catch (err) {
   isStorageSupport = false;
 }
-
-buttonPopup.preventDefault();
 
 buttonPopup.addEventListener("click", function(evt) {
     evt.preventDefault();
