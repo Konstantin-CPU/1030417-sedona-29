@@ -17,7 +17,7 @@
         <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Фото и видео</a></li>
         <li class="site-navigation-item">
           <a href="#" class="main-header-logo">
-            <img src="img/logo.svg" width="138px" height="70px" alt="logo">
+            <img src="img/logo.svg" width="138" height="70" alt="logo">
           </a>
         </li>
         <li class="site-navigation-item"><a class="site-navigation-item-path" href="">Карта штата</a></li>
@@ -31,8 +31,9 @@
 
     <section class="welcome-sedona">
       <img src="img/welcome.svg" class="welcome-img" width="188" height="88" alt="Welcome">
-      <img src="img/to the gorgeous.svg" class="welcome-img" width="256" height="29" alt="To the gorgeous">
+      <img src="img/welcome-to-the-gorgeous.svg" class="welcome-img" width="256" height="29" alt="To the gorgeous">
       <img src="img/SEDONA.svg" class="welcome-img" width="457" height="213" alt="SEDONA">
+      <h2 class="welcome-sedona-heading heading visually-hidden">Welcome-sedona</h2>
     </section>
 
     <section class="advantages">
@@ -92,7 +93,6 @@
           </li>
         </ul>
       </div>
-      </ul>
     </section>
     <section class="interested">
       <h2 class="heading interested-title">Заинтересовались?</h2>
@@ -100,6 +100,7 @@
       <a class="button interested-button-search">Поиск гостиницы в Седоне</a>
     </section>
     <section class="hotel-search-block">
+      <h2 class="visually-hidden">Поиск отеля</h2>
       <form class="hotel-search-form visually-hidden">
         <div class="form-arrival-date-block">
           <label class="input-value" for="form-arrival-date">дата заезда:</label>
@@ -118,22 +119,22 @@
         <div class="age-block">
           <label for="form-age-adults" class="adults input-value">взрослые:</label>
           <div class="form-age-block">
-            <button class="button-minus"></button>
+            <button class="button-minus" aria-label="remove-person"></button>
             <input id="form-age-adults" class="form-age form-age-adults input" type="text" value="2" name="age-adults">
-            <button class="button-plus"></button>
+            <button class="button-plus" aria-label="add-person"></button>
           </div>
           <label for="form-age-kids" class="kids input-value">дети:</label>
           <div class="form-age-block">
-            <button class="button-minus"></button>
+            <button class="button-minus" aria-label="remove-person"></button>
             <input id="form-age-kids" class="form-age form-age-kids input" type="text" value="0" name="age-kids">
-            <button class="button-plus"></button>
+            <button class="button-plus" aria-label="add-person"></button>
           </div>
         </div>   
         <input class="button-find input" type="submit" value="Найти" name="find-hotel">
       </form>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498663.7736196967!2d-112.10094288629567!3d34.806614125845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sbg!4v1602272688333!5m2!1sru!2sbg"
-        width="1200" height="473" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        width="1200" height="473" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0" class="sedona-map"></iframe>
     </section>
   </main>
@@ -146,18 +147,18 @@
       <div class="footer-social">
         <ul class="socials-list list">
           <li class="social-list-item">
-            <a class="social-button social-button-tw" href="#"></a>
+            <a class="social-button social-button-tw" href="#" title="twitter" aria-label="twitter-social"></a>
           </li>
           <li class="social-list-item">
-            <a class="social-button social-button-fb" href="#"></a>
+            <a class="social-button social-button-fb" href="#" title="facebook" aria-label="facebook-social"></a>
           </li>
           <li class="social-list-item">
-            <a class="social-button social-button-yt" href="#"></a>
+            <a class="social-button social-button-yt" href="#" title="youtube" aria-label="youtube-social"></a>
           </li>
         </ul>
       </div>
       <div class="copyright">
-        <a href="https://htmlacademy.ru" class="copyright-logo">Website by</a>
+        <a href="https://htmlacademy.ru" class="copyright-logo" title="created by htmlacademy" aria-label="copyright">Website by</a>
       </div>
     </div>
   </footer>
