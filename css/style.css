@@ -1,29 +1,29 @@
-/* pt-sans-regular - latin_cyrillic */
+
 
 @font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/pt-sans-v11-latin-cyrillic-regular.eot'); /* IE9 Compat Modes */
     src: local('PT Sans'), local('PTSans-Regular'),
-         url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/pt-sans-v11-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/pt-sans-v11-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+         url('../fonts/pt-sans-v11-latin-cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v11-latin-cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v11-latin-cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
   }
-  /* pt-sans-700 - latin_cyrillic */
+ 
   @font-face {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/pt-sans-v11-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/pt-sans-v11-latin-cyrillic-700.eot'); /* IE9 Compat Modes */
     src: local('PT Sans Bold'), local('PTSans-Bold'),
-         url('../fonts/pt-sans-v11-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/pt-sans-v11-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/pt-sans-v11-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
+         url('../fonts/pt-sans-v11-latin-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v11-latin-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v11-latin-cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
   }
 
 
@@ -48,6 +48,7 @@
     --white-opacity0-3: rgba(255, 255, 255, 0.3);
     --black-opacity0-3: rgba(0, 0, 0, 0.3);
     --main-page-shadow: rgba(0, 1, 1, 0.2);
+    --hotel-search-form-shadow: rgba(0, 1, 1, 0.15);
 }
 .page {
     background-color: var(--forms-background);
@@ -58,12 +59,12 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: var(--main-black);
+    color: var(--main-color);
     text-transform: uppercase;
     background-color: var(--basic-white);
     min-height: 100%;
@@ -430,7 +431,7 @@ button:focus {
     box-sizing: border-box;
     padding: 55px;
     background: var(--basic-white);
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    box-shadow: 0px 7px 15px var(--hotel-search-form-shadow);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -522,7 +523,6 @@ button:focus {
 .form-age-block .button-minus {
     position: absolute;
     border: none;
-    background-color: none;
     outline: none;
     cursor: pointer;
 }
@@ -767,7 +767,7 @@ button:focus {
     margin-top: -23px;
 }
 
-.checkbox-fildset-group {
+.checkbox-fieldset-group {
     min-width: 390px;
     display: flex;
     justify-content: space-between;
@@ -805,7 +805,7 @@ button:focus {
     height: 23px;
     background-image: url("../img/checkbox-off.svg"); 
     background-position: 50%;
-    background-position: no-repeat;
+    background-repeat: no-repeat;
     cursor: pointer;
 }
 
@@ -814,15 +814,15 @@ button:focus {
     height: 23px;
     background-image: url("../img/checkbox-on.svg"); 
     background-position: 50%;
-    background-position: no-repeat;
+    background-repeat: no-repeat;
 }
 
-.checkbox:not(:checked).blocked-checkbox {
-    background-image: url("../img/checkbox-off-blocked.svg");
+.checkbox.disabled + .checkbox-icon {
+    background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-.checkbox:checked.blocked-checkbox {
-    background-image: url("../img/checkbox-on-blocked.svg");
+.checkbox:checked.disabled + .checkbox-icon {
+    background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .checkbox-value {
@@ -929,7 +929,7 @@ button:focus {
     color: var(--main-color);
 }
 
-.hotel-page-filters .checkboxs-block {
+.hotel-page-filters .checkbox-block {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1104,7 +1104,7 @@ button:focus {
     background-color: var(--basic-blue);
 }
 
-.hotels-main-info-containter {
+.hotels-main-info-container {
     width: 258px;
     display: flex;
     flex-wrap: wrap;
